@@ -1,0 +1,78 @@
+
+.korpa{
+    
+    padding: 20px;
+    text-align: center;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+table{
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    box-shadow: 0 4px 10 pc rgb(64, 64, 64, 0.2);
+}
+.sviproizvodiukorpi{
+    padding: 50px;
+
+}
+th, td{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.obrisi{
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.obrisi:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+input{
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+@media(max-width:768px){
+    table,thead,tbody,th,td,tr{
+        display: block;
+        width: 100%;
+        border: none;
+
+    }
+    tr{
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+    thead{
+        display: none;
+    }
+}
+select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background: linear-gradient(to right, #ffcc70, #ff8177);
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+select:hover {
+    background: linear-gradient(to right, #ff8177, #ffcc70);
+    transform: scale(1.05);
+}   

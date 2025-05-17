@@ -82,6 +82,34 @@ margin: 0 auto;
     transition: 0.5s;
     transform: scale(1.05);
 }
+@media(max-width: 1000px){
+    .jezici-lista{
+        grid-template-columns: 1fr 1fr;
+    }
+    .jezikimg{
+        width: 5em;
+    }
+}
+@media(max-width: 577px){
+    .jezici-lista{
+        grid-template-columns: 1fr;
+    }
+    .jezikimg{
+        width: 4em;
+    }
+}   
+.kraj-sekcije-jezici {
+    margin: 50px 0;
+    text-align: center;
+}
+.kraj-sekcije-jezici h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.kraj-sekcije-jezici p {
+    font-size: 1.2em;
+    color: #666;
+}
 /* kraj sekcije jezici */
 /* sekcija o nama */
 .o-nama{
@@ -99,6 +127,19 @@ margin: 0 auto;
 .o-namaslika{
     width:17.5em;
     margin: 0 auto;
+}
+@media(max-width: 768px){
+    .o-nama{
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .o-nama-content{
+        grid-template-columns: 1fr;
+        font-size: smaller;
+        padding: 10px;
+
+    }
 }
 /* kraj sekcije o nama */
 /* sekcija kontakt */

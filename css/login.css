@@ -1,0 +1,91 @@
+body{
+background-image: url(https://i.pinimg.com/736x/6d/e9/59/6de959df781952525490950bb2c16c39.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.registracija-section{
+    background-color: rgb(244, 228, 209, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 100px auto;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.input-group i{
+    margin-right: 10px;
+}
+.input-group input{
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    background-color: aliceblue;
+    width: 100%;
+}
+.registracija-section h2{
+   
+    margin-left: 70px;
+}
+.dugme-submit{
+    display: block;
+    margin-left: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, rgb(241, 179, 190), white);
+    box-shadow: 2px 4px 10px rgb(21, 21, 21, 0.2);
+    cursor: pointer;
+}
+.dugme-submit:hover{
+    background-image: linear-gradient(to right, white, rgb(241, 179, 190));
+    transform: translateY(-2px);
+}
+.registracija-section a{
+    color: hotpink;
+}
+@media (max-width: 768px) {
+   
+    .registracija-section {
+        margin: 50px 20px;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .registracija-section h2 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0;
+    }
+
+    .input-group i {
+        margin-bottom: 5px;
+        font-size: 1.2em;
+    }
+
+    .input-group input {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .dugme-submit {
+        width: 100%;
+        font-size: 1em;
+        margin-top: 15px;
+    }
+
+    .registracija-section p {
+        text-align: center;
+        font-size: 0.95em;
+    }
+}

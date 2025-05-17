@@ -18,3 +18,107 @@ h2{
     padding: 0;
     box-sizing: border-box;
 }
+/* nav meni */
+nav{
+    background-color: #2e3b55;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+nav a{
+    margin:10px;
+    text-decoration: none;
+    color: #f9c851;
+}
+nav a.active{
+  text-decoration: underline;
+  text-decoration-color: #f9c851;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+
+}
+
+
+.logoslika{
+    height: 80px;
+    border-radius: 50%;
+}
+/* hamburger meni */
+ #menu-toggle{
+    display: none;
+ } 
+ .hamburger{
+    display: none;
+ }
+
+ @media(max-width: 768px){
+    .ukusi-grid{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+    }
+    .ukus-box img{
+        width: 150px;
+        height: 150px;
+    }
+    .stiker{
+        left: 20px;
+    }
+    .o-nama{
+        grid-template-columns: 1fr;
+    }
+    .preporuke-grid{
+        grid-template-columns: 1fr;
+    }
+    .zvezdice{
+        font-size: 15pxS;
+    }
+    .zasto-grid{
+        grid-template-columns: 1fr;
+    }
+    .slika{
+        display: none;
+    }
+     nav ul.nav-links {
+        display: none;
+    }
+
+    nav input[type="checkbox"]:checked ~ ul.nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 10;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        color: #f9c851;
+    }
+ }
+  @media(max-width: 1024px){
+    .ukusi-grid{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+    }
+    .ukus-box img{
+        width: 150px;
+        height: 150px;
+    }
+ } 

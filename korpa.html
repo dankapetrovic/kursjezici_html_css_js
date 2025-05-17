@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korpa</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/98033dd5a2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/sve.css">
+    <link rel="stylesheet" href="css/korpa.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+<a href="index.html"><img class="logoslika" src="img/logo.png" alt="logo"></a>
+        </div>
+        
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+<input type="checkbox" id="menu-toggle">
+        <ul class="nav-links">
+     <li><a href="index.html">Pocetna</a></li>
+    <li><a href="svijezici.html">Svi jezici</a></li>
+    <li><a href="korpa.html" class="active">Korpa</a></li>
+    <li><a href="registracija.html">Registruj se</a></li>
+    <li><a href="login.html">Prijavi se</a></li>
+</ul>
+    </nav>
+    </header>
+    </section>
+    <section class="korpa">
+        <h2>Proizvodi u korpi</h2>
+<div class="proizvodiukorpi">
+        <table>
+            <thead>
+            <tr>
+                
+                <th>Kurs</th>
+                <th>Slika</th>
+                <th>Cena</th>
+                <th>Nivo</th>
+        
+                <th>Obrisi</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Engleski</td>
+                <td><img src="https://i.pinimg.com/736x/89/5e/e1/895ee19a8089bced037a3c91c864dbe9.jpg" alt=""></td>
+                <td>9900 din</td>
+                <td><select name="nivo" required>
+    <option value="" disabled selected>Odaberite nivo</option>
+    <option value="a1">A1</option>
+    <option value="a2">A2</option>
+    <option value="b1">B1</option>
+    <option value="b2">B2</option>
+    <option value="c1">C1</option>
+    <option value="c2">C2</option>
+</select></td>
+                
+                <td><button class="obrisi"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>Italijanski</td>
+                <td><img src="https://i.pinimg.com/736x/a6/8a/71/a68a71faf92067cc2b7a78480b249d98.jpg" alt=""></td>
+                <td>9900 din</td>
+                <td><select name="nivo" required>
+    <option value="" disabled selected>Odaberite nivo</option>
+    <option value="a1">A1</option>
+    <option value="a2">A2</option>
+    <option value="b1">B1</option>
+    <option value="b2">B2</option>
+    <option value="c1">C1</option>
+    <option value="c2">C2</option>
+</select></td>
+                
+                <td><button class="obrisi"><i class="fa-solid fa-trash"></i></button></td>
+        </tr>
+        </tbody>
+        </div>
+        </table>
+    </section>
+</body>
+</html>
