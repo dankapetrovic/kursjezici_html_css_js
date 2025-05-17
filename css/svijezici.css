@@ -1,0 +1,95 @@
+.nasaponuda{
+    background-color: #ffb8b3;
+    padding: 20px;
+    text-align: center;
+}
+.sviproizvodi{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.proizvod{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgb(65, 63, 63, 0.2);
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+    height: 600px;
+}
+.proizvodheder{
+    width: 100%;
+    height: 300px;
+}
+.proizvod img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.dodaj{
+    background-color: bisque;
+    color: brown;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.dodaj:hover{
+    background-color:brown ;
+    color: bisque;
+    transition: 0.3s;
+}
+.staracena{
+    text-decoration: line-through;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.novacena{
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+}
+.proizvod:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+/* sekcija nivo */
+.nivojezika {
+    margin: 30px auto;
+
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+.nivojezika h2{
+    margin-bottom: 30px;
+}
+
+
+
+.nivoikartice {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.karticanivo {
+    background: rgb(254, 230, 218);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.karticanivo:hover {
+    transform: translateY(-5px);
+}
+
+
