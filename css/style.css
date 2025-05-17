@@ -1,0 +1,20 @@
+body{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+h1, h2{
+ font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-content{
+    background-image: url("https://i.pinimg.com/736x/5b/fa/a1/5bfaa1dd721282685a2ea689e6acd17b.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
