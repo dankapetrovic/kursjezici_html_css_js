@@ -1,10 +1,12 @@
 body{
-background-image: url(https://i.pinimg.com/736x/6d/e9/59/6de959df781952525490950bb2c16c39.jpg);
+background: url('/img/50afdd77ce137b72ff15fca1ff44bb1a.jpg');
+background-position: fixed;
+background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
 }
 .registracija-section{
-    background-color: rgb(244, 228, 209, 0.5);
+    background-color: rgb(244, 228, 209, 0.8);
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
