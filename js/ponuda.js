@@ -49,6 +49,12 @@ const kursevi = [
   }
 ];
 
+function dodajUKorpu(index) {
+   let korpa = JSON.parse(localStorage.getItem("korpa")) || [];
+   korpa.push(proizvodi[index]);
+
+}
+
 function ucitajProizvode(){
     const sviProizvodi = document.getElementById("sviproizvodi");
     sviProizvodi.innerHTML = ""; // Očisti prethodni sadržaj
@@ -64,9 +70,17 @@ function ucitajProizvode(){
             <span class="cena">Stara cena: <span class="staraCena">${kurs.staraCena} RSD</span> <br>
             <i class="fa-solid fa-tag"></i>
             <span class="cena">Nova cena: <span class="novaCena">${kurs.novaCena} RSD</span></span>
-            <button class="dodaj" data-id="${kurs.id}"><i class="fa-solid fa-cart-plus">Dodaj u korpu</button>`;
+            <button class="dodaj" data-id="${index}"><i class="fa-solid fa-cart-plus">Dodaj u korpu</button>`;
 
         sviProizvodi.appendChild(proizvodDiv);
     });
+
+    const dugmici = document.querySelectorAll(".dodaj");
+    dugmici.forEach((dugme,index) => {
+        dugme.addEventListener("click", function() {
+            const index = dugme.getAttribute("data-id");
+            dodajUKorpu();
+        });
+    });
 }
-ucitajProizvode();
+window.addEventListener("DOMContentLoaded", ucitajProizvode);
