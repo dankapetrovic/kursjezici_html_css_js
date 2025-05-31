@@ -36,54 +36,55 @@
         <h2>Kreiraj nalog</h2>
         <div class="form-container">
 
-            <form action="">
+            <form id="regform">
                 <div class="input-group">
                 <i class="fa-solid fa-user"></i>
-<input type="text" name="ime_prezime" placeholder="ime i prezime" required><br>
+<input type="text" id="ime_prezime" name="ime_prezime" placeholder="ime i prezime" required><br>
 </div>
 
 <div class="input-group">
 <i class="fa-solid fa-envelope"></i>
-<input type="email" name="email" placeholder="unesite email" required><br>
+<input type="email" id="email" name="email" placeholder="unesite email" required><br>
 </div>
 
 <div class="input-group">
 <i class="fa-solid fa-key"></i>
-<input type="password" name="lozinka" placeholder="unesite lozinku" required><br>
+<input type="password" id="lozinka" name="lozinka" placeholder="unesite lozinku" required><br>
 </div>
 
 <div class="input-group">
 <i class="fa-solid fa-key"></i>
-<input type="password" name="ponovi_lozinka" placeholder="ponovo unesite lozinku" required><br>
+<input type="password" id="ponovi_lozinku" placeholder="ponovo unesite lozinku" required><br>
 </div>
 
 <div class="input-group">
 <i class="fa-solid fa-phone"></i>
-<input type="text" name="telefon" placeholder="unesite broj telefona"required> <br>
+<input type="text" name="telefon" id="telefon" placeholder="unesite broj telefona" required> <br>
 </div>
 
 <div class="input-group">
 <i class="fa-solid fa-location-dot"></i>
-<input type="text" name="adresa" placeholder="unesite adresu"required> <br>
+<input type="text" name="adresa" id="adresa" placeholder="unesite adresu" required> <br>
 </div>
 
 <div class="input-group">
 <i class="fa-solid fa-calendar"></i>
-<input type="date" name="datum_rodjenja" placeholder="unesite datum rodjenja" required>
+<input type="date" name="datum_rodjenja" id="datum_rodjenja" required>
 </div>
 
 <div class="input-group">
 <i class="fa-solid fa-venus-mars"></i>
-<select name="pol" required>
+<select id="pol" name="pol" required>
     <option value="" disabled selected>Odaberite pol</option>
     <option value="muski">Muški</option>
     <option value="ženski">Ženski</option>
 </select><br>
 </div>
-<button class="dugme-submit">Registracija</button>
+<button id="regbtn" class="dugme-submit">Registracija</button>
 <p>Već imate nalog? <a href="login.html">Prijavite se</a></p>
             </form>
         </div>
     </section>
+    <script src="js/registracija.js"></script>
 </body>
 </html>
